@@ -1,0 +1,22 @@
+customization:
+  distribution_code_name: Weasel
+  distribution_version: 0.14.3
+  generator: "Rime::SwitcherSettings"
+  modified_time: "Sun Feb 21 12:22:26 2021"
+  rime_version: 1.5.3
+patch:
+  "ascii_composer/good_old_caps_lock": true
+  #修改几个辅助键的作用
+  "ascii_composer/switch_key":
+    Caps_Lock: noop #无用
+    Control_L: noop
+    Control_R: noop
+    Shift_L: commit_code
+    Shift_R: inline_ascii
+  "menu/page_size": 5
+  schema_list: #选择开启的输入方案
+    - { schema: double_pinyin_flypy }
+    - { schema: aurora_pinyin }
+  "switcher/caption": "〔选择方案〕"
+  "switcher/hotkeys":
+    - "Control+grave"

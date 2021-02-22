@@ -1,0 +1,74 @@
+customization:
+  distribution_code_name: Weasel
+  distribution_version: 0.14.3
+  generator: "Weasel::UIStyleSettings"
+  modified_time: "Sat Feb 20 11:49:53 2021"
+  rime_version: 1.5.3
+patch:
+  #特定应用自动切换英文，此处为VScode
+  app_options/code.exe:
+    ascii_mode: true
+  app_options/WindowsTerminal.exe:
+    ascii_mode: true
+  app_options/pwsh.exe:
+    ascii_mode: true
+
+  #自定义外形｜皮肤
+  style:
+    color_scheme: user_gry  #选择皮肤
+    display_tray_icon: false             #是否显示托盘图标
+    horizontal: true                     #是否横排
+    #一个字体可以有多个字重，其全称可以在windows系统设置-字体里面找到（点进去查看）
+    #font_face: "Microsoft YaHei UI Bold"    #微软雅黑
+    font_face: "微软雅黑 Bold"    #微软雅黑
+    #font_face: "Microsoft YaHei Mono"    #微软雅黑
+    font_point: 16                       #字号
+    inline_preedit: true                 #输入码内嵌
+    fullscreen: false                    #全屏...居然还有这么神奇的选项
+    label_format: "%s"
+    #label_format: "%s"                   #每个候选字前面的字符，%s表示候选字对应的序号，可以在后面加内容
+    line_spacing: 0                      #行距
+
+    #候选词选择窗口自定义
+    layout:
+    #窗口
+      border_width: 3       #边框宽度
+      min_height: 0         #候选词窗口最小高度
+      min_width: 0          #候选词窗口最小宽度
+    #选词色块
+      hilite_padding: 4     #选词色块的大小
+      round_corner: 4      #选词色块的圆角大小
+    #候选词
+      margin_x: 8          #候选字与窗口边缘x轴距离
+      margin_y: 8          #候选字与窗口边缘y轴距离
+      candidate_spacing: 8  #候选词之间的空白宽度
+      hilite_spacing: 4     #候选词与两侧符号（序号标签&右侧太极符号）之间的距离
+      spacing: 0         #快捷切换不同状态（全角/半角）（简体/繁体）等提示窗口的最小宽度
+
+  #自定义皮肤方案
+  "preset_color_schemes/user_gry":
+    name: "user_gry"
+    author: "lqzibb"
+    back_color: 0xEBEBEB
+    border_color: 0xE1E1E1
+    text_color: 0x000000
+    hilited_text_color: 0x000000
+    hilited_back_color: 0xD4D4D4
+    hilited_candidate_text_color: 0x000000
+    hilited_candidate_back_color: 0xFFFFFF
+    candidate_text_color: 0x000000
+    comment_text_color: 0x616161
+  "preset_color_schemes/demo_one_gray":
+    name: "demo_one_gray"
+    author: "lqzibb"
+    back_color: 0xD9D9D9
+    border_color: 0xB3B3B3
+    text_color: 0x000000
+    hilited_text_color: 0x000000
+    hilited_back_color: 0xBDBDBD
+    hilited_candidate_text_color: 0x000000
+    hilited_candidate_back_color: 0xFFFFFF
+    candidate_text_color: 0x000000
+    comment_text_color: 0x6B6B6B
+    hilited_candidate_label_color: 0xE63535
+    hilited_corner_radius: 15

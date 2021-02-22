@@ -1,0 +1,456 @@
+# Rime user dictionary
+#@/db_name	custom.userdb
+#@/db_type	userdb
+#@/rime_version	1.5.3
+#@/tick	532
+#@/user_id	.backup
+a 	啊	c=2 d=0.293948 t=530
+an jian 	安监	c=-1 d=0 t=529
+an jian 	按键	c=-1 d=0.995012 t=530
+an jian 	案件	c=-1 d=0 t=529
+an zhuang 	安装	c=0 d=0.0798516 t=530
+an zhuang xuan xiang 	安装选项	c=1 d=0.802519 t=530
+ba 	把	c=1 d=0.348142 t=530
+ba hou mian 	把后面	c=1 d=0.316637 t=530
+ba nong 	把弄	c=-1 d=0 t=530
+ba nong ha n 	把农哈嗯	c=-1 d=0.628135 t=532
+bei fen 	备份	c=2 d=0.445147 t=530
+ben di 	本地	c=0 d=0.0909373 t=530
+ben di cang ku 	本地仓库	c=1 d=0.913931 t=530
+bi ru 	比如	c=2 d=1.21003 t=530
+bian yuan 	边缘	c=4 d=1.37895 t=530
+biao 	标	c=1 d=0.404119 t=530
+biao shi 	表示	c=1 d=0.941765 t=530
+bu 	不	c=5 d=1.90683 t=530
+bu diao 	不掉	c=0 d=0.1 t=531
+bu ding 	补丁	c=2 d=1.18607 t=530
+bu ding yi 	不定义	c=1 d=0.396531 t=530
+bu duan 	不断	c=1 d=0.748264 t=530
+bu ru 	不如	c=1 d=0.603506 t=530
+bu tai 	步态	c=0 d=0.0379083 t=530
+bu tai dong 	不台东	c=2 d=1 t=530
+bu tai dong 	步态懂	c=-1 d=0.380983 t=530
+bu xing 	不行	c=0 d=0.0486752 t=530
+bu zhuan huan 	不转换	c=1 d=0.463013 t=530
+can kan 	参看	c=1 d=0.843665 t=530
+cang ku 	仓库	c=0 d=0.28214 t=530
+cao zuo 	操作	c=1 d=0.170308 t=530
+cao zuo ru xia 	操作如下	c=1 d=0.154896 t=530
+ce shi 	测试	c=4 d=2.44879 t=530
+cha 	查	c=2 d=1.99501 t=530
+cha kan 	查看	c=3 d=2.07755 t=530
+chan sheng 	产生	c=1 d=0.255388 t=530
+chan sheng de 	产生的	c=1 d=0.149569 t=530
+chang tian 	长天	c=0 d=0.0117655 t=530
+chang yong 	常用	c=1 d=0.937067 t=530
+cheng ci 	成词	c=1 d=0.424839 t=530
+chong 	重	c=1 d=0.241714 t=530
+chong zhi 	重置	c=1 d=0.241714 t=530
+chou 	丑	c=2 d=0.670755 t=530
+chu 	处	c=2 d=0.554687 t=530
+chu 	除	c=1 d=0.276651 t=530
+chu shi 	初始	c=2 d=1.13388 t=530
+chu shi hua 	初始化	c=2 d=1.82789 t=530
+chuang kou 	窗口	c=4 d=1.37208 t=530
+ci 	此	c=1 d=0.995012 t=530
+ci 	词	c=10 d=2.30079 t=530
+ci chu 	此处	c=2 d=1.23448 t=530
+ci dian 	词典	c=5 d=1.23838 t=530
+ci ku 	词库	c=28 d=8.43481 t=530
+ci pin 	词频	c=2 d=0.496908 t=530
+ci zu 	词组	c=1 d=0.852144 t=530
+cun chu 	存储	c=0 d=0.0856415 t=530
+cun chu zai 	存储在	c=1 d=0.860708 t=530
+da 	打	c=-2 d=0.563069 t=530
+dai ma 	代码	c=7 d=3.81698 t=530
+dai ma you wu 	代码有误	c=1 d=0.628135 t=530
+dan yin hao 	单引号	c=2 d=0.64124 t=530
+dan zai 	但在	c=2 d=0.811111 t=530
+dao ru 	导入	c=-3 d=0.975169 t=530
+dao ru ci ku 	导入词库	c=-1 d=0.88692 t=530
+de 	的	c=19 d=6.16131 t=530
+de ge 	的歌	c=-1 d=0.0170333 t=530
+de ge shi 	的歌是	c=-1 d=0.171187 t=530
+de wen ti 	的问题	c=1 d=0.918512 t=530
+di yi 	第一	c=-1 d=0.175147 t=530
+di yi hang 	第一行	c=-1 d=0.148081 t=530
+di zhi 	地址	c=2 d=0.463314 t=530
+dian 	点	c=0 d=0.099005 t=530
+dian jin qu 	点进去	c=1 d=0.995012 t=530
+diao 	掉	c=1 d=0.479505 t=530
+diao 	调	c=2 d=0.961413 t=530
+diao le 	掉了	c=2 d=0.940498 t=530
+ding yi 	定义	c=2 d=0.889493 t=530
+ding yi le yi hou 	定义了以后	c=1 d=0.410656 t=530
+dong 	懂	c=0 d=0.0379083 t=530
+dou shi 	都是	c=1 d=0.111359 t=530
+duan yu 	短语	c=8 d=4.81388 t=530
+duo 	多	c=3 d=0.519842 t=530
+duo ci ku 	多词库	c=1 d=0.19593 t=530
+duo ge 	多个	c=1 d=0.955997 t=530
+er 	而	c=3 d=2.86801 t=530
+fa 	法	c=1 d=0.763379 t=530
+fan ti 	繁体	c=2 d=0.436332 t=530
+fang an 	方案	c=5 d=2.37813 t=530
+fang bian 	方便	c=0 d=0.097531 t=530
+fang shi 	方式	c=2 d=0.568729 t=530
+fei chang 	非常	c=2 d=0.66741 t=530
+fen zhi 	分支	c=1 d=0.97531 t=530
+fu jia 	附加	c=1 d=0.970446 t=530
+fu wu 	服务	c=1 d=0.83527 t=530
+gai 	改	c=1 d=0.304221 t=530
+gai jin 	改进	c=2 d=0.680892 t=530
+ge 	个	c=1 d=0.178959 t=530
+ge shi 	格式	c=4 d=0.939858 t=530
+ge zhong 	各种	c=1 d=0.932394 t=530
+gen zong 	跟踪	c=0 d=0.0980199 t=530
+gen zong xing xi 	跟踪星系	c=1 d=0.985112 t=530
+geng da 	更大	c=1 d=0.755784 t=530
+geng jia 	更加	c=1 d=0.767206 t=530
+gong 	共	c=0 d=0.0117655 t=530
+guan 	关	c=0 d=0.083527 t=530
+guan bi 	关闭	c=2 d=0.698129 t=530
+guan cha zhe 	观察者	c=0 d=0.0794534 t=530
+guan cha zhe wang 	观察者网	c=1 d=0.798516 t=530
+guan li 	管理	c=1 d=0.882497 t=530
+guan lian 	关联	c=1 d=1.05591 t=530
+guan lian yuan cheng cang ku 	关联远程仓库	c=1 d=0.955997 t=530
+guan xi 	关系	c=0 d=0.0946485 t=530
+guo cheng 	过程	c=1 d=0.737123 t=530
+hang 	行	c=2 d=0.358443 t=530
+hen 	很	c=1 d=0.331211 t=530
+hen kuan 	很宽	c=1 d=0.331211 t=530
+hou 	后	c=2 d=1.06253 t=530
+hou duan 	后端	c=6 d=1.28039 t=530
+hou mian 	后面	c=3 d=0.861769 t=530
+hou xuan 	候选	c=1 d=0.579758 t=530
+hou xuan ci 	候选词	c=1 d=0.527292 t=530
+hou zhe 	后者	c=1 d=0.763379 t=530
+hua tu 	画图	c=2 d=0.966232 t=530
+hui 	会	c=4 d=2.02705 t=530
+hui jiang 	会将	c=2 d=0.381231 t=530
+hui se 	灰色	c=1 d=0.111917 t=530
+hun 	混	c=2 d=1.87993 t=530
+hun shu 	混输	c=3 d=2.71914 t=530
+huo 	或	c=2 d=0.479817 t=530
+huo zhe shi 	或者是	c=1 d=0.88692 t=530
+ji chu 	基础	c=2 d=1.98506 t=530
+ji guang 	极光	c=1 d=1.08313 t=530
+ji guang pin yin 	极光拼音	c=5 d=1.04664 t=530
+ji ke 	即可	c=2 d=0.992505 t=530
+ji ke cha kan 	即可查看	c=1 d=0.271173 t=530
+jia 	加	c=2 d=0.985112 t=530
+jian 	键	c=2 d=0.504418 t=530
+jian cha 	检查	c=1 d=0.806541 t=530
+jian li 	建立	c=0 d=0.0946485 t=530
+jian li zhui zong guan xi 	建立追踪关系	c=1 d=0.951229 t=530
+jian ti 	简体	c=3 d=2.22592 t=530
+jiang 	将	c=2 d=0.937676 t=530
+jin qu 	进去	c=0 d=0.099005 t=530
+jin ru 	进入	c=2 d=0.538294 t=530
+jin xing 	进行	c=2 d=0.402786 t=530
+jiu shi 	就是	c=1 d=0.287899 t=530
+jiu shi zhe ge 	就是这个	c=1 d=0.261846 t=530
+jiu you le 	就有了	c=1 d=0.45834 t=530
+jiu you le yi xie wen ti 	就有了一些问题	c=1 d=0.416862 t=530
+ju ti 	具体	c=2 d=0.307478 t=530
+jue de 	觉得	c=0 d=0.0995012 t=530
+kai qi 	开启	c=1 d=0.565187 t=530
+kan 	看	c=0 d=0.0918512 t=530
+kan bu chu 	看不出	c=0 d=0.0774916 t=530
+kan bu chu wen ti 	看不出问题	c=1 d=0.778801 t=530
+kan zhe li 	看这里	c=1 d=0.923116 t=530
+ke bian cheng 	可编程	c=0 d=0.0114178 t=530
+ke yi 	可以	c=5 d=2.29489 t=530
+ke yi tong guo 	可以通过	c=1 d=0.873716 t=530
+ke yi you 	可以有	c=1 d=0.951229 t=530
+ke yi zai 	可以在	c=2 d=1.19695 t=530
+kong bai 	空白	c=2 d=1.07858 t=530
+kong ge 	空格	c=4 d=1.28288 t=530
+kong hang 	空行	c=1 d=0.110803 t=530
+ku 	哭	c=1 d=0.900325 t=530
+kuai jie fang shi 	快捷方式	c=1 d=0.852144 t=530
+kuai jie jian 	快捷键	c=1 d=0.733447 t=530
+kuan 	宽	c=1 d=0.332871 t=530
+le 	了	c=3 d=0.776245 t=530
+li mian 	里面	c=1 d=0.985112 t=530
+li zi 	例子	c=2 d=1.94575 t=530
+liang tao 	两套	c=1 d=0.941765 t=530
+liang xiang 	两项	c=2 d=1.14528 t=530
+lie biao 	列表	c=2 d=1.70856 t=530
+liu zi bin 	柳子彬	c=2 d=0.990693 t=530
+ma 	码	c=1 d=0.498775 t=530
+man 	慢	c=1 d=0.204825 t=530
+mei you 	没有	c=2 d=0.291024 t=530
+men 	门	c=0 d=0.0114178 t=530
+ming cheng 	名称	c=3 d=2.09783 t=530
+ming ling 	命令	c=4 d=1.74685 t=530
+ming ling xiang jie 	命令详解	c=1 d=0.358796 t=530
+mo bu zhao tou nao 	摸不着头脑	c=2 d=1.73438 t=530
+mo ren 	默认	c=2 d=0.609967 t=530
+mou ge 	某个	c=2 d=0.281014 t=530
+mou xie 	某些	c=1 d=0.869358 t=530
+mu lu 	目录	c=1 d=0.606167 t=530
+mu qian 	目前	c=4 d=0.805822 t=530
+na 	那	c=0 d=0.0484325 t=530
+na ge 	那个	c=2 d=0.638042 t=530
+na me 	那么	c=1 d=0.803162 t=530
+na me zhe hui zen me yang 	那么这会怎么样	c=1 d=0.118837 t=530
+na zen me xing 	那怎么行	c=1 d=0.486752 t=530
+nei cun 	内存	c=4 d=0.760675 t=530
+nei rong 	内容	c=2 d=0.517187 t=530
+ni de 	你的	c=1 d=0.814647 t=530
+pa 	怕	c=1 d=0.283654 t=530
+pan 	盘	c=2 d=1.98506 t=530
+pei zhi 	配置	c=1 d=0.904837 t=530
+pin yin 	拼音	c=1 d=1.08806 t=530
+pin zhong 	品种	c=0 d=0.0142274 t=530
+qi 	其	c=3 d=0.868126 t=530
+qi 	起	c=1 d=0.213312 t=530
+qi zhong 	其中	c=1 d=0.748264 t=530
+qian bi 	铅笔	c=1 d=0.290793 t=530
+qian bi xian 	铅笔线	c=1 d=0.264477 t=530
+qian ru 	嵌入	c=1 d=0.782705 t=530
+qian zhe 	前者	c=0 d=0.0748264 t=530
+qian zhe zi you du 	前者自由度	c=1 d=0.752014 t=530
+qie huan dao 	切换到	c=1 d=0.737123 t=530
+qiu shui 	秋水	c=0 d=0.0117655 t=530
+qiu shui gong chang tian yi se 	秋水共长天一色	c=1 d=0.118245 t=530
+qu bie 	区别	c=1 d=0.694197 t=530
+qu diao 	去掉	c=1 d=0.923116 t=530
+quan bu 	全部	c=2 d=0.9471 t=530
+quan cheng 	全称	c=1 d=0.965605 t=530
+quan pin 	全拼	c=1 d=0.496514 t=530
+quan pin ma 	全拼码	c=1 d=0.451581 t=530
+rang 	让	c=3 d=1.49445 t=530
+ri yong 	日用	c=1 d=0.88692 t=530
+rong he 	融合	c=1 d=1.04588 t=530
+rong he ci 	融合词	c=3 d=2.88253 t=530
+ru he 	如何	c=1 d=1.02528 t=530
+ru he fang bian de 	如何方便的	c=1 d=0.980199 t=530
+ru shang 	如上	c=2 d=1.04671 t=530
+ru xia 	如下	c=3 d=1.39243 t=530
+ruo xiang 	若想	c=1 d=0.504017 t=530
+ruo xiang yao 	若想要	c=1 d=0.458406 t=530
+sha 	沙	c=-1 d=0 t=530
+shan 	删	c=0 d=0.1 t=531
+shan bu diao 	删不掉	c=1 d=1 t=532
+shan chu 	删除	c=6 d=1.04436 t=530
+shan shuo 	闪烁	c=1 d=0.790571 t=530
+shang mian 	上面	c=1 d=0.18084 t=530
+shang mian yi hang 	上面一行	c=1 d=0.164474 t=530
+she zhi 	设置	c=0 d=0.0970446 t=530
+shen me 	什么	c=3 d=1.29088 t=530
+shen me shi 	什么是	c=2 d=1.92639 t=530
+sheng xin 	省心	c=1 d=0.771052 t=530
+shi 	时	c=5 d=1.71171 t=530
+shi 	是	c=41 d=29.6452 t=530
+shi 	试	c=1 d=0.154101 t=530
+shi fou 	是否	c=3 d=1.47259 t=530
+shi fou kai qi 	是否开启	c=1 d=0.511709 t=530
+shi le yi xia 	试了一下	c=1 d=0.160414 t=530
+shi li 	事例	c=2 d=0.326492 t=530
+shi shen me 	是什么	c=1 d=0.250324 t=530
+shi shu ji 	实数集	c=1 d=0.927743 t=530
+shi xian 	实现	c=2 d=0.583127 t=530
+shi xiao 	失效	c=2 d=1.2913 t=530
+shi xiao 	实效	c=1 d=0.644036 t=530
+shi yi 	是一	c=1 d=0.178147 t=530
+shi yi ge 	是一个	c=1 d=0.162026 t=530
+shi yong 	使用	c=3 d=1.40454 t=530
+shou dong 	手动	c=1 d=0.861042 t=530
+shu 	输	c=2 d=1.88892 t=530
+shu ji 	数集	c=1 d=0.937067 t=530
+shu liang 	数量	c=2 d=0.353684 t=530
+shu ru 	输入	c=13 d=6.86776 t=530
+shu ru fa 	输入法	c=2 d=1.23824 t=530
+shu ru fang an 	输入方案	c=3 d=2.53509 t=530
+shu ru kuang 	输入框	c=2 d=0.995659 t=530
+shu ru xi guan 	输入习惯	c=1 d=0.818731 t=530
+shu ru yi ge 	输入一个	c=1 d=0.65377 t=530
+shu zi 	数字	c=1 d=0.918512 t=530
+shuang 	双	c=0 d=0.0142274 t=530
+shuang pin 	双拼	c=3 d=0.777252 t=530
+shuang pin shi 	双拼时	c=1 d=0.444858 t=530
+shuang pin zhong 	双品种	c=1 d=0.142987 t=530
+shuo ming shu 	说明书	c=1 d=0.810584 t=530
+su du 	速度	c=2 d=0.366282 t=530
+sui zhe 	随着	c=2 d=0.348418 t=530
+tai 	太	c=1 d=0.377192 t=530
+tai dong 	台东	c=0 d=0.1 t=529
+tai ji 	太极	c=0 d=0.0360595 t=530
+tai ji tu 	太极图	c=1 d=0.402283 t=530
+tai ji tu biao 	太极图标	c=1 d=0.364219 t=530
+tai ji tu biao 	太极图表	c=-1 d=0.357007 t=530
+tai xu 	太续	c=-1 d=0.377192 t=530
+tai xu 	太虚	c=-1 d=0 t=530
+ti huan 	替换	c=0 d=0.0767206 t=530
+tian jia 	添加	c=12 d=4.62986 t=530
+tong bu 	同步	c=2 d=1.51879 t=530
+tong guo 	通过	c=3 d=0.855491 t=530
+tong shi 	同时	c=1 d=0.932394 t=530
+tu biao 	图标	c=2 d=1.00567 t=530
+tu biao 	图表	c=0 d=0.0360595 t=530
+u pan 	U盘	c=-4 d=3.475 t=530
+u pan 	U盘查	c=-4 d=3.475 t=530
+u pan 	U盤	c=-4 d=3.44042 t=530
+wang 	网	c=0 d=0.0794534 t=530
+wang luo zi yuan 	网络资源	c=1 d=0.774916 t=530
+wang zhan 	网站	c=4 d=3.61037 t=530
+wang zhi 	网址	c=2 d=1.31739 t=530
+wei 	为	c=13 d=3.67776 t=530
+wei ruan 	微软	c=1 d=0.115903 t=530
+wei shen me 	为什么	c=3 d=1.44498 t=530
+wei zhi 	位置	c=3 d=0.836761 t=530
+wei zhi zai 	位置在	c=2 d=0.553329 t=530
+wen jian 	文件	c=7 d=2.7785 t=530
+wen jian jia 	文件夹	c=2 d=0.447378 t=530
+wen ti 	问题	c=2 d=0.713682 t=530
+wen zhang 	文章	c=2 d=1.24067 t=530
+wen zi 	文字	c=0 d=0.0951229 t=530
+wo 	我	c=2 d=0.710813 t=530
+wo guan diao le 	我关掉了	c=1 d=0.839457 t=530
+wo jue de 	我觉得	c=1 d=1 t=530
+wo xuan ze 	我选择	c=1 d=0.198891 t=530
+wo ye 	我也	c=0 d=0.0486752 t=530
+wo ye bu xing 	我也不行	c=1 d=0.489192 t=530
+wu fa 	无法	c=1 d=0.479218 t=530
+wu xiao 	无效	c=2 d=1.80516 t=530
+xi guan 	习惯	c=0 d=0.0814647 t=530
+xi tong 	系统	c=0 d=0.0970446 t=530
+xi tong she zhi 	系统设置	c=1 d=0.97531 t=530
+xia mian 	下面	c=3 d=1.69156 t=530
+xia mian de 	下面的	c=1 d=0.38868 t=530
+xia mian yi duan 	下面一段	c=1 d=0.109701 t=530
+xian 	线	c=1 d=0.292117 t=530
+xian chang 	现场	c=0 d=0.0114178 t=530
+xian chang ke bian cheng men zhen lie 	现场可编程门阵列	c=1 d=0.11475 t=530
+xian shi 	显示	c=4 d=1.5441 t=530
+xiang jie 	详解	c=3 d=1.10853 t=530
+xiang ying 	相应	c=0 d=0.0909373 t=530
+xiang ying chan sheng 	相应产生	c=1 d=0.913931 t=530
+xiao guo 	效果	c=2 d=0.292482 t=530
+xiao lang hao 	小狼毫	c=3 d=2.622 t=530
+xie zai 	卸载	c=1 d=0.839457 t=530
+xin 	新	c=1 d=0.371523 t=530
+xin jian 	新建	c=3 d=1.27705 t=530
+xin jian yi ge 	新建一个	c=1 d=0.156453 t=530
+xin shu ru fa 	新输入法	c=1 d=0.337902 t=530
+xin xi 	信息	c=2 d=1.92244 t=530
+xing 	行	c=0 d=0.0484325 t=530
+xing xi 	星系	c=0 d=0.0980199 t=530
+xiu gai 	修改	c=8 d=2.48211 t=530
+xiu gai wei 	修改为	c=2 d=0.406834 t=530
+xu 	续	c=1 d=0.379083 t=530
+xu yao 	需要	c=2 d=0.932999 t=530
+xuan xiang 	选项	c=0 d=0.0798516 t=530
+xuan ze 	选择	c=3 d=0.959879 t=530
+xue xi 	学习	c=2 d=1.55511 t=530
+ya hei 	雅黑	c=1 d=0.116484 t=530
+yan 	颜	c=0 d=0.0951229 t=530
+yan wen zi 	颜文字	c=1 d=0.955997 t=530
+yao 	要	c=2 d=0.809019 t=530
+yao gai 	要改	c=1 d=0.302704 t=530
+ye 	也	c=1 d=0.477045 t=530
+ye hui 	也会	c=2 d=0.377437 t=530
+ye ke yi 	也可以	c=0 d=0.0666977 t=530
+ye ke yi shi yong 	也可以使用	c=1 d=0.67032 t=530
+ye wu fa 	也无法	c=1 d=0.433874 t=530
+ye xian 	也先	c=0 d=0.0321422 t=530
+ye xian shi 	也先是	c=1 d=0.323033 t=530
+yi 	一	c=1 d=0.181663 t=530
+yi duan 	一段	c=0 d=0.0109154 t=530
+yi ge 	一个	c=2 d=0.894904 t=530
+yi ge zi ti 	一个字体	c=1 d=0.946485 t=530
+yi hou 	以后	c=1 d=0.455643 t=530
+yi qie 	一切	c=1 d=0.228746 t=530
+yi qie zheng chang 	一切正常	c=1 d=0.208045 t=530
+yi se 	一色	c=0 d=0.0117655 t=530
+yi xia 	一下	c=1 d=0.15565 t=530
+yi xia 	以下	c=2 d=1.1226 t=530
+yi xie wen ti 	一些问题	c=1 d=0.460428 t=530
+yin 	阴	c=1 d=0.904837 t=530
+yin si 	隐私	c=1 d=0.927743 t=530
+yin yue 	音乐	c=1 d=0.895834 t=530
+ying wen 	英文	c=1 d=0.960651 t=530
+ying wen ci ku 	英文词库	c=1 d=0.946485 t=530
+ying yu 	英语	c=2 d=1.74307 t=530
+yong 	用	c=2 d=1.16259 t=530
+yong hu 	用户	c=7 d=4.70656 t=530
+yong hu ci dian 	用户词典	c=1 d=0.878095 t=530
+yong hu mu lu 	用户目录	c=1 d=0.548812 t=530
+yong hu zi liao 	用户资料	c=1 d=0.891366 t=530
+you 	有	c=2 d=0.646569 t=530
+you wu 	有误	c=1 d=0.693781 t=530
+you xiao de 	有效的	c=2 d=0.807065 t=530
+yu 	与	c=3 d=2.00982 t=530
+yuan 	原	c=2 d=0.591939 t=530
+yuan cheng 	远程	c=0 d=0.191202 t=530
+yuan cheng cang ku 	远程仓库	c=1 d=0.965605 t=530
+yue lai yue 	越来越	c=1 d=0.203896 t=530
+yue lai yue da 	越来越大	c=2 d=0.379329 t=530
+yue lai yue man 	越来越慢	c=1 d=0.185444 t=530
+zai 	在	c=14 d=5.29295 t=530
+zai qi zhong 	在其中	c=2 d=0.316842 t=530
+zai wo 	在我	c=2 d=0.787139 t=530
+zao ci 	造次	c=0 d=0.0142274 t=530
+zao ci 	造词	c=4 d=0.615873 t=530
+zao ju 	灶具	c=1 d=0.519442 t=530
+zao ju 	造句	c=2 d=1.20688 t=530
+zao ju yu 	造句与	c=1 d=0.826959 t=530
+zen jia 	怎家	c=1 d=0.179066 t=530
+zen me 	怎么	c=0 d=0.0484325 t=530
+zen me yang 	怎么样	c=0 d=0.0118245 t=530
+zeng jia 	增加	c=2 d=0.360829 t=530
+zhan shi 	展示	c=2 d=0.333087 t=530
+zhan yong 	占用	c=2 d=0.373682 t=530
+zhao dao 	找到	c=1 d=0.99005 t=530
+zhe ge 	这个	c=1 d=0.289211 t=530
+zhe hui 	这会	c=0 d=0.0118245 t=530
+zhe li 	这里	c=0 d=0.0918512 t=530
+zhe xie 	这些	c=1 d=0.847894 t=530
+zhen lie 	阵列	c=0 d=0.0114178 t=530
+zheng chang 	正常	c=1 d=0.229788 t=530
+zheng ge 	整个	c=2 d=0.942376 t=530
+zheng ze 	正则	c=2 d=1.32399 t=530
+zhi 	置	c=1 d=0.242926 t=530
+zhi 	至	c=1 d=0.110251 t=530
+zhi chi 	支持	c=2 d=0.3029 t=530
+zhi hou 	之后	c=3 d=1.41517 t=530
+zhi neng 	只能	c=0 d=0.0704688 t=530
+zhi neng zi ji shou dong 	只能自己手动	c=1 d=0.70822 t=530
+zhi xian shi 	只显示	c=2 d=0.625408 t=530
+zhong 	中	c=12 d=5.20071 t=530
+zhong de 	中的	c=3 d=1.90097 t=530
+zhong ying 	中英	c=3 d=2.78451 t=530
+zhong ying hun shu 	中英混输	c=3 d=2.63431 t=530
+zhu shi 	注视	c=1 d=0.421052 t=530
+zhu shi 	注释	c=8 d=3.47194 t=530
+zhuan huan 	转圜	c=-1 d=0 t=530
+zhuan huan 	转寰	c=-1 d=0 t=530
+zhuan huan 	转换	c=2 d=0.91621 t=530
+zhui zong 	追踪	c=0 d=0.0946485 t=530
+zi 	自	c=1 d=0.172951 t=530
+zi chong 	字重	c=1 d=0.960789 t=530
+zi ding yi 	自定义	c=10 d=4.69536 t=530
+zi dong 	自动	c=11 d=5.16378 t=530
+zi dong cheng ci 	自动成词	c=1 d=0.382893 t=530
+zi dong zao ci 	自动造词	c=7 d=1.79051 t=530
+zi dong zao ju 	自动造句	c=1 d=0.83527 t=530
+zi dong zu ci 	自动组词	c=3 d=2.39579 t=531
+zi fu ji 	字符集	c=1 d=0.923116 t=530
+zi ji 	自己	c=0 d=0.0704688 t=530
+zi liao 	资料	c=1 d=0.895831 t=530
+zi ti 	字体	c=3 d=1.28204 t=530
+zi xing 	自行	c=0 d=0.0767206 t=530
+zi xing ti huan 	自行替换	c=1 d=0.771052 t=530
+zi yong 	自用	c=1 d=0.900325 t=530
+zi you du 	自由度	c=0 d=0.0748264 t=530
+zi zao ci 	自造次	c=1 d=0.142987 t=530
+zi zao ci 	自造词	c=1 d=0.143704 t=530
+zi zu 	自组	c=1 d=0.236894 t=530
+zi zu ci 	自组词	c=2 d=0.994256 t=530
+zu ci 	组词	c=3 d=1.6043 t=530
+zu he 	组合	c=2 d=1.79616 t=530
+zui xiao 	最小	c=2 d=0.980835 t=530
+zuo wei 	作为	c=2 d=0.408873 t=530

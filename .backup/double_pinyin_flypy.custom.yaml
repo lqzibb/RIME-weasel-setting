@@ -1,0 +1,223 @@
+# Rime schema
+# encoding: utf-8
+patch:
+   #載入朙月拼音扩充词库
+   #"translator/dictionary": luna_pinyin.extended
+   #导入自定义组合词库
+   #"translator/dictionary": custom
+   translator:
+      dictionary: custom #选择自定义词典
+      #自动成词
+      enable_encoder: true #是否开启自动造词
+      max_phrase_length: 5 #最大自动成词词长
+      encode_commit_history: true #是否对已上屛词自动成词
+      enable_completion: true #提前显示尚未输入完整码的字
+      sentence_over_completion: true #在无全码对应字而仅有逐键提示时也开启智能组句
+      enable_sentence: false #是否开启自动造句
+      enable_user_dict: true #是否开启用户词典〔用户词典记录动态字词频，用户词〕
+      #输入双拼码的时候是否转化为全拼码
+      #若想要不转换，需要将整个preedit_format全部注释调
+      #preedit_format:
+      #   - xform/([bpmfdtnljqx])n/$1iao/
+      #   - xform/(\w)g/$1eng/
+      #   - xform/(\w)q/$1iu/
+      #   - xform/(\w)w/$1ei/
+      #   - xform/([dtnlgkhjqxyvuirzcs])r/$1uan/
+      #   - xform/(\w)t/$1ve/
+      #   - xform/(\w)y/$1un/
+      #   - xform/([dtnlgkhvuirzcs])o/$1uo/
+      #   - xform/(\w)p/$1ie/
+      #   - xform/([jqx])s/$1iong/
+      #   - xform/(\w)s/$1ong/
+      #   - xform/(\w)d/$1ai/
+      #   - xform/(\w)f/$1en/
+      #   - xform/(\w)h/$1ang/
+      #   - xform/(\w)j/$1an/
+      #   - xform/([gkhvuirzcs])k/$1uai/
+      #   - xform/(\w)k/$1ing/
+      #   - xform/([jqxnl])l/$1iang/
+      #   - xform/(\w)l/$1uang/
+      #   - xform/(\w)z/$1ou/
+      #   - xform/([gkhvuirzcs])x/$1ua/
+      #   - xform/(\w)x/$1ia/
+      #   - xform/(\w)c/$1ao/
+      #   - xform/([dtgkhvuirzcs])v/$1ui/
+      #   - xform/(\w)b/$1in/
+      #   - xform/(\w)m/$1ian/
+      #   - xform/([aoe])\1(\w)/$1$2/
+      #   - "xform/(^|[ '])v/$1zh/"
+      #   - "xform/(^|[ '])i/$1ch/"
+      #   - "xform/(^|[ '])u/$1sh/"
+      #   - xform/([jqxy])v/$1u/
+      #   - xform/([nl])v/$1ü/
+   #下面的代码在我不定义translator:时是有效的，但在我定义了以后，就有了一些问题
+   #注释掉了之后也无法让其在双拼时显示全拼码
+   #translator/preedit_format: {}
+
+   #载入custom_phrase自定义短语
+   #engine/translators:
+   #   - punct_translator
+   #   - reverse_lookup_translator
+   #   - script_translator
+   #   - table_translator@custom_phrase #表示调用 custom_phrase段编码
+   #   - table_translator
+   #自定义短语 #失效
+   "engine/translators/@5": table_translator@custom_phrase
+   custom_phrase:
+      dictionary: ""
+      user_dict: custom_phrase
+      db_class: stabledb
+      enable_completion: false
+      enable_sentence: false
+      initial_quality: 1
+   #测试=>email
+   #url:
+   #   dictionary: ""
+   #   user_dict: custom_phrase
+   #   db_class: tabledb
+   #   tips: "输入一个网址"
+   #   tag: url
+   #   enable_completion: false
+   #   enable_sentence: false
+   #   initial_quality: 1
+   #反查-笔画
+   reverse_lookup:
+      dictionary: stroke
+      enable_completion: true
+      prefix: "%"
+      suffix: "'"
+      tips: 〔输入笔画:h一 s丨 p丿 n丶 z乙〕
+      preedit_format:
+         - xlit/hspnz/一丨丿丶乙/
+      comment_format:
+         - xform/([nl])v/$1ü/
+
+   #输入模式切换
+   #此处文本应该对齐其他地方，而“-”不算文本
+   switches:
+    - name: ascii_mode
+      reset: 0 #默认中文
+      #states: [ 中文, 西文 ] #注释起来，不在方案选单中显示
+    - name: full_shape
+      reset: 0 #默认半角
+      states: [ 半角, 全角 ]
+    - name: simplification
+      reset: 1 #默认简体
+      states: [ "繁體", "简体" ]
+    - name: ascii_punct
+      reset: 0
+      states: [ 《》, <> ]
+      #states: [ 。，, ．， ] #原版，不好看
+   #输入颜文字与emoji的附加方案
+   #下面一段至空行都是
+   switches/@next:
+      name: emoji_suggestion
+      reset: 0 #默认不开启
+      #states: [ "🈚️️\uFE0E", "🈶️️\uFE0F" ] #原版，后面的/*字符显示不出来
+      states: [ "🎈", "😀️" ]
+   'engine/filters/@before 0':
+      simplifier@emoji_suggestion
+   emoji_suggestion:
+      opencc_config: emoji.json
+      option_name: emoji_suggestion
+      tips: all
+
+   #menu/alternative_select_labels: [⑴,⑵,⑶,⑷,⑸,⑹,⑺,⑻,⑼]  # 修改候選標籤
+   #menu/alternative_select_keys: ASDFGHJKL #如編碼字符佔用數字鍵則須另設選字鍵
+
+   #recognizer与matcher搭配，处理符合特定规则的输入码，如网址，反查等tags
+   recognizer/patterns/punct: "/[a-z]*$" #配合symbols.yaml中的特殊字符输入
+   recognizer/patterns/reverse_lookup: "%[a-z]*'?$" #激活反查,通过修改[a-z]前面的字符来达到自定义字符激活
+
+   speller/delimiter: "'" #上屛时的音节间分音符
+   #自定义快捷键
+   key_binder:
+      bindings:
+         - {accept: "Control+p", send: Up, when: composing}
+         - {accept: "Control+n", send: Down, when: composing}
+         - {accept: "Control+b", send: Left, when: composing}
+         - {accept: "Control+f", send: Right, when: composing}
+         - {accept: "Control+a", send: Home, when: composing}
+         - {accept: "Control+e", send: End, when: composing}
+         - {accept: "Control+d", send: Delete, when: composing}
+         - {accept: "Control+k", send: "Shift+Delete", when: composing} #删除自动造词，或重置词库中词的词频
+         - {accept: "Control+h", send: BackSpace, when: composing}
+         - {accept: "Control+g", send: Escape, when: composing}
+         #- {accept: "Control+bracketleft", send: Escape, when: composing}
+         #- {accept: "Alt+v", send: Page_Up, when: composing}
+         - {accept: "Control+v", send: Page_Down, when: composing}
+         - {accept: ISO_Left_Tab, send: Page_Up, when: composing}
+         - {accept: "Shift+Tab", send: Page_Up, when: composing}
+         - {accept: Tab, send: Page_Down, when: composing}
+         - {accept: minus, send: Page_Up, when: has_menu}
+         - {accept: equal, send: Page_Down, when: has_menu}
+         - {accept: comma, send: Page_Up, when: has_menu}
+         - {accept: period, send: Page_Down, when: has_menu}
+         #- {accept: "Control+1", select: aurora_pinyin, when: always}
+         #切换全角/半角符号
+         #- {accept: "Shift+space", toggle: full_shape, when: always}
+         #切换中英文标点
+         #- {accept: "Control+period", toggle: ascii_punct, when: always}
+         - {accept: semicolon, send: 2, when: has_menu} #分号选第二重码
+         - {accept: apostrophe, send: 3, when: has_menu} #引号选第三重码
+      #import_preset: default #导入默认设置
+
+  #符号快速输入和部分符号的快速上屏
+   punctuator:
+      import_preset: symbols #导入默认设置
+      half_shape: #半角符号
+         '#': "#"
+        #'`': ["·","`"]
+         '`': "`"
+         "~": "~"
+         "!": "！" #全角感叹号
+         #"!": "!" #半角感叹号
+         "@": "@"
+         "$": "$"
+         #"$": ["¥", "$", "€", "£", "¢", "¤"]
+         "^": "^"
+         "%": "%"
+         "*": "*"
+         "(": "（"
+         ")": "）"
+         "_": "_"
+         "=": "="
+         "/": "、"
+         #"/": ["/", "÷"]
+         '\': '\'
+         #'\': "、"
+         "\\" : "\\"
+         "\"" : { pair: [ "“", "”" ] }
+         "'": {pair: ["「", "」"]}
+         "[": "["
+         "]": "]"
+         "{": "{"
+         "}": "}"
+         "|": "|"
+         #"[": ["【", "["]
+         #"]": ["】", "]"]
+         ".": {commit: "。"}
+         #".": "。"
+         "<": "《"
+         ">": "》"
+         #"<": ["《", "〈", "«", "<"]
+         #">": ["》", "〉", "»", ">"]
+      symbols: #特殊符号
+         "/doyy": ["🌥"]
+      #单位
+         "/ueuidu": ["℃"]
+         "/hxuidu": ["℉"]
+      #希腊字母
+         "/aaerfa": ["ɑ"]
+         "/bwta": ["β"]
+         "/gama": ["γ"]
+         "/gamaa": ["Γ"]
+         "/deta": ["δ"]
+         "/detaa": ["Δ"]
+         "/ai": ["ε"]
+         "/xita": ["θ"]
+         "/xitaa": ["Θ"]
+         "/lameda": ["λ"]
+         "/mu": ["μ"]
+      #Other
+         "/dm": ["·"]
