@@ -1,0 +1,7 @@
+# Rime user dictionary
+#@/db_name	luna_pinyin.userdb
+#@/db_type	userdb
+#@/rime_version	1.5.3
+#@/tick	9
+#@/user_id	.backup
+chong xin 	重新	c=10 d=9.77853 t=9

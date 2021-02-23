@@ -1,7 +1,7 @@
 # Rime schema
 # encoding: utf-8
 patch:
-   "schema/description": 极光拼音＋小鹤双拼方案
+   "schema/description": 极光拼音＋小鹤双拼
    #載入朙月拼音扩充词库
    #"translator/dictionary": luna_pinyin.extended
    #导入自定义组合词库
@@ -11,8 +11,8 @@ patch:
    "translator/encode_commit_history": true #是否对已上屛词自动成词
    "translator/enable_completion": true #提前显示尚未输入完整码的字
    "translator/sentence_over_completion": true #在无全码对应字而仅有逐键提示时也开启智能组句
-   "translator/enable_sentence": false #是否开启自动造句
-   "translator/enable_user_dict": true #是否开启用户词典〔用户词典记录动态字词频，用户词〕
+   #"translator/enable_sentence": false #是否开启自动造句
+   #"translator/enable_user_dict": true #是否开启用户词典〔用户词典记录动态字词频，用户词〕
    #"translator/preedit_format": {} #输入双拼码的时候是否转化为全拼码
 
    #添加两个引擎

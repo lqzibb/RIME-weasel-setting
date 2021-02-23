@@ -1,68 +1,24 @@
 # Rime schema
 # encoding: utf-8
 patch:
+   "schema/description": 极光拼音＋小鹤双拼
    #載入朙月拼音扩充词库
    #"translator/dictionary": luna_pinyin.extended
    #导入自定义组合词库
-   #"translator/dictionary": custom
-   translator:
-      dictionary: custom #选择自定义词典
-      #自动成词
-      enable_encoder: true #是否开启自动造词
-      max_phrase_length: 5 #最大自动成词词长
-      encode_commit_history: true #是否对已上屛词自动成词
-      enable_completion: true #提前显示尚未输入完整码的字
-      sentence_over_completion: true #在无全码对应字而仅有逐键提示时也开启智能组句
-      enable_sentence: false #是否开启自动造句
-      enable_user_dict: true #是否开启用户词典〔用户词典记录动态字词频，用户词〕
-      #输入双拼码的时候是否转化为全拼码
-      #若想要不转换，需要将整个preedit_format全部注释调
-      #preedit_format:
-      #   - xform/([bpmfdtnljqx])n/$1iao/
-      #   - xform/(\w)g/$1eng/
-      #   - xform/(\w)q/$1iu/
-      #   - xform/(\w)w/$1ei/
-      #   - xform/([dtnlgkhjqxyvuirzcs])r/$1uan/
-      #   - xform/(\w)t/$1ve/
-      #   - xform/(\w)y/$1un/
-      #   - xform/([dtnlgkhvuirzcs])o/$1uo/
-      #   - xform/(\w)p/$1ie/
-      #   - xform/([jqx])s/$1iong/
-      #   - xform/(\w)s/$1ong/
-      #   - xform/(\w)d/$1ai/
-      #   - xform/(\w)f/$1en/
-      #   - xform/(\w)h/$1ang/
-      #   - xform/(\w)j/$1an/
-      #   - xform/([gkhvuirzcs])k/$1uai/
-      #   - xform/(\w)k/$1ing/
-      #   - xform/([jqxnl])l/$1iang/
-      #   - xform/(\w)l/$1uang/
-      #   - xform/(\w)z/$1ou/
-      #   - xform/([gkhvuirzcs])x/$1ua/
-      #   - xform/(\w)x/$1ia/
-      #   - xform/(\w)c/$1ao/
-      #   - xform/([dtgkhvuirzcs])v/$1ui/
-      #   - xform/(\w)b/$1in/
-      #   - xform/(\w)m/$1ian/
-      #   - xform/([aoe])\1(\w)/$1$2/
-      #   - "xform/(^|[ '])v/$1zh/"
-      #   - "xform/(^|[ '])i/$1ch/"
-      #   - "xform/(^|[ '])u/$1sh/"
-      #   - xform/([jqxy])v/$1u/
-      #   - xform/([nl])v/$1ü/
-   #下面的代码在我不定义translator:时是有效的，但在我定义了以后，就有了一些问题
-   #注释掉了之后也无法让其在双拼时显示全拼码
-   #translator/preedit_format: {}
+   "translator/dictionary": custom
+   "translator/enable_encoder": true #是否开启自动造词
+   "translator/max_phrase_length": 5 #最大自动成词词长
+   "translator/encode_commit_history": true #是否对已上屛词自动成词
+   "translator/enable_completion": true #提前显示尚未输入完整码的字
+   "translator/sentence_over_completion": true #在无全码对应字而仅有逐键提示时也开启智能组句
+   "translator/enable_sentence": false #是否开启自动造句
+   "translator/enable_user_dict": true #是否开启用户词典〔用户词典记录动态字词频，用户词〕
+   #"translator/preedit_format": {} #输入双拼码的时候是否转化为全拼码
 
+   #添加两个引擎
+   "engine/translators/@7": table_translator #与enable_completion有关
+   "engine/translators/@8": table_translator@custom_phrase
    #载入custom_phrase自定义短语
-   #engine/translators:
-   #   - punct_translator
-   #   - reverse_lookup_translator
-   #   - script_translator
-   #   - table_translator@custom_phrase #表示调用 custom_phrase段编码
-   #   - table_translator
-   #自定义短语 #失效
-   "engine/translators/@5": table_translator@custom_phrase
    custom_phrase:
       dictionary: ""
       user_dict: custom_phrase
@@ -70,16 +26,6 @@ patch:
       enable_completion: false
       enable_sentence: false
       initial_quality: 1
-   #测试=>email
-   #url:
-   #   dictionary: ""
-   #   user_dict: custom_phrase
-   #   db_class: tabledb
-   #   tips: "输入一个网址"
-   #   tag: url
-   #   enable_completion: false
-   #   enable_sentence: false
-   #   initial_quality: 1
    #反查-笔画
    reverse_lookup:
       dictionary: stroke
