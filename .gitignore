@@ -1,4 +1,14 @@
-custom.userdb/
+#custom.userdb/
+#luna_pinyin.userdb/
+#aurora_pinyin.userdb/
+
+#用这个替代上面的三个
+*.userdb/
+
 build/
+
 desktop.ini
+
 custom_phrase.txt
+
+.backup/custom_phrase.txt

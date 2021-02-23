@@ -4,3 +4,4 @@
 #@/rime_version	1.5.3
 #@/tick	0
 http://rime.im/	rime	1
+大大d www 1
