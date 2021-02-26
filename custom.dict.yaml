@@ -5,7 +5,17 @@ use_preset_vocabulary: true
 #在下面的列表添加词库
 
 import_tables:
+  - luna_pinyin #「朙月拼音］
   - aurora_pinyin #极光拼音基础词库
-  - luna_pinyin.cn_en #融合词词库，什么是融合词？=>例子: U盘
+  #- luna_pinyin.cn_en #融合词词库，什么是融合词？=>例子: U盘
   #- luna_pinyin.english  #英文词库，中英混输,试了一下，在双拼中没有效果啊
-  #- luna_pinyin.website #网站名称集合
+  - luna_pinyin.website #网站名称集合
+
+#融合词
+U盘	upan
+T恤	txu
+阿Q	aq
+X轴	xzhou
+Y轴	yzhou
+Z轴 zzhou
+IC卡 icka

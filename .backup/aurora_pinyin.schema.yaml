@@ -76,7 +76,7 @@ speller:
     - derive/xia$/cia/ # cia > xia
 
 translator:
-  dictionary: aurora_pinyin
+  dictionary: luna_pinyin
   preedit_format:
     - xform/([nl])v/$1ü/
     - xform/([nl])ue/$1üe/
@@ -104,8 +104,12 @@ punctuator:
     "#" : "#"
     "@" : "@"
 
+#key_binder/bindings/@20: {accept: "Control+w", select: "double_pinyin_flypy", when: always}
 key_binder:
   import_preset: default
+  bindings:
+    - {accept: "Control+KP_Divide", select: "double_pinyin_flypy", when: always}
+
 
 recognizer:
   import_preset: default

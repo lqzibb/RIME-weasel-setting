@@ -2,21 +2,26 @@ customization:
   distribution_code_name: Weasel
   distribution_version: 0.14.3
   generator: "Rime::SwitcherSettings"
-  modified_time: "Sun Feb 21 12:22:26 2021"
+  modified_time: "Fri Feb 26 15:55:21 2021"
   rime_version: 1.5.3
 patch:
   "ascii_composer/good_old_caps_lock": true
-  #修改几个辅助键的作用
   "ascii_composer/switch_key":
-    Caps_Lock: noop #无用
+    Caps_Lock: noop
     Control_L: noop
     Control_R: noop
     Shift_L: commit_code
     Shift_R: inline_ascii
+  'key_binder/import_preset': default
+  #'key_binder/bindings/@18': {accept: "Control+q", select: "double_pinyin_flypy", when: always}
+  #key_binder:
+    #import_preset: default #导入默认设置
+    #bindings:
+    #- {accept: "Control+BackSpace", select: keyboard, when: always}
   "menu/page_size": 5
-  schema_list: #选择开启的输入方案
-    - { schema: double_pinyin_flypy }
-    - { schema: aurora_pinyin }
-  "switcher/caption": "〔选择方案〕"
+  schema_list:
+    - {schema: double_pinyin_flypy}
+    - {schema: aurora_pinyin}
+  "switcher/caption": "「选择方案」"
   "switcher/hotkeys":
-    - "Control+grave"
+    - "Control+KP_Decimal"

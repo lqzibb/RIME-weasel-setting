@@ -3,7 +3,7 @@
 recipe:
   Rx: customize
   args:
-    - schema=luna_pinyin
+    - schema=double_pinyin_flypy
   description: >-
     Customize input schema to show emoji suggestion with OpenCC
 
@@ -12,6 +12,6 @@ install_files: >-
   # opencc/*.*
 
 patch_files:
-  ${schema:-luna_pinyin}.custom.yaml:
+  ${schema:-double_pinyin_flypy}.custom.yaml:
     - patch/+:
         __include: emoji_suggestion:/patch

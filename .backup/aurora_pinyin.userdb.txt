@@ -1,7 +1,0 @@
-# Rime user dictionary
-#@/db_name	aurora_pinyin.userdb
-#@/db_type	userdb
-#@/rime_version	1.5.3
-#@/tick	4
-#@/user_id	.backup
-chong xin 	重新	c=4 d=3.97017 t=4
