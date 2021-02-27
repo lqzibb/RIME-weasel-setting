@@ -76,11 +76,10 @@ patch:
    recognizer/patterns/punct: "\\\\[a-z]*$" #配合symbols.yaml中的特殊字符输入
    recognizer/patterns/reverse_lookup: "%[a-z]*'?$" #激活反查,通过修改[a-z]前面的字符来达到自定义字符激活
 
-   speller/delimiter: "'" #上屛时的音节间分音符
+   speller/delimiter: "'" #上屛时音节间分音符
+   
    #自定义快捷键
    'key_binder/bindings/@18': {accept: "Control+KP_Divide", select: "aurora_pinyin", when: always}
-   #'key_binder/bindings/@15': {accept: "Control+KP_0", toggle: full_shape, when: always}
-   #'key_binder/bindings/@16': {accept: "Control+KP_5", toggle: simplification , when: always}
    #'key_binder/import_preset': default
    #key_binder:「选择方案」
       #import_preset: default #导入默认设置
@@ -110,9 +109,9 @@ patch:
          #- {accept: "Shift+space", toggle: full_shape, when: always}
          #切换中英文标点
          #- {accept: "Control+period", toggle: ascii_punct, when: always}
-      #   - {accept: "Control+Shift+4", toggle: simplification, when: always}
-      #   - {accept: semicolon, send: 2, when: has_menu} #分号选第二重码
-      #   - {accept: apostrophe, send: 3, when: has_menu} #引号选第三重码
+         #- {accept: "Control+Shift+4", toggle: simplification, when: always}
+         #- {accept: semicolon, send: 2, when: has_menu} #分号选第二重码
+         #- {accept: apostrophe, send: 3, when: has_menu} #引号选第三重码
 
   #符号快速输入和部分符号的快速上屏
    punctuator:
