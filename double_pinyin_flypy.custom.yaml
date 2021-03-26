@@ -43,7 +43,7 @@ patch:
    #此处文本应该对齐其他地方，而“-”不算文本
    switches:
     - name: ascii_mode
-      reset: 0 #默认中文
+      reset: 1 #默认中文
       #states: [ 中文, 西文 ] #注释起来，不在方案选单中显示
     - name: full_shape
       reset: 0 #默认半角
@@ -79,40 +79,39 @@ patch:
    speller/delimiter: "'" #上屛时的音节间分音符
    #自定义快捷键
    'key_binder/bindings/@18': {accept: "Control+KP_Divide", select: "aurora_pinyin", when: always}
-   #'key_binder/bindings/@15': {accept: "Control+KP_0", toggle: full_shape, when: always}
-   #'key_binder/bindings/@16': {accept: "Control+KP_5", toggle: simplification , when: always}
    #'key_binder/import_preset': default
-   #key_binder:「选择方案」
+   key_binder:
       #import_preset: default #导入默认设置
-      #bindings:
-         #- {accept: "Control+p", send: Up, when: composing}
-         #- {accept: "Control+n", send: Down, when: composing}
-         #- {accept: "Control+b", send: Left, when: composing}
-         #- {accept: "Control+f", send: Right, when: composing}
-         #- {accept: "Control+a", send: Home, when: composing}
-         #- {accept: "Control+e", send: End, when: composing}
-         #- {accept: "Control+d", send: Delete, when: composing}
-         #- {accept: "Control+k", send: "Shift+Delete", when: composing} #删除自动造词，或重置词库中词的词频
+      bindings:
+         - {accept: "Alt+k", send: "Control+Delete", when: composing} #删除自动造词，或重置词库中词的词频
          #- {accept: "Control+h", send: BackSpace, when: composing}
          #- {accept: "Control+g", send: Escape, when: composing}
          #- {accept: "Control+bracketleft", send: Escape, when: composing}
-         #- {accept: "Alt+v", send: Page_Up, when: composing}
          #- {accept: "Control+v", send: Page_Down, when: composing}
-         #- {accept: ISO_Left_Tab, send: Page_Up, when: composing}
          #- {accept: "Shift+Tab", send: Page_Up, when: composing}
-         #- {accept: Tab, send: Page_Down, when: composing}
-         #- {accept: minus, send: Page_Up, when: has_menu}
-         #- {accept: equal, send: Page_Down, when: has_menu}
-         #- {accept: comma, send: Page_Up, when: has_menu}
-         #- {accept: period, send: Page_Down, when: has_menu}
-         #- {accept: "Control+1", select: aurora_pinyin, when: always}
-         #切换全角/半角符号
-         #- {accept: "Shift+space", toggle: full_shape, when: always}
-         #切换中英文标点
-         #- {accept: "Control+period", toggle: ascii_punct, when: always}
-      #   - {accept: "Control+Shift+4", toggle: simplification, when: always}
-      #   - {accept: semicolon, send: 2, when: has_menu} #分号选第二重码
-      #   - {accept: apostrophe, send: 3, when: has_menu} #引号选第三重码
+         #......................................................
+         #操作輸入碼
+         - {accept: grave, send: Delete, when: has_menu}
+         #- {accept: grave, send: "Control+Left", when: has_menu}
+         - {accept: Tab, send: "Control+Right", when: has_menu}
+         #......................................................
+         #翻页
+         - {accept: minus, send: Page_Up, when: paging}
+         - {accept: equal, send: Page_Down, when: composing}
+         - {accept: comma, send: Page_Up, when: paging}
+         - {accept: period, send: Page_Down, when: composing}
+         #.....................................................
+         #快速选词
+         - {accept: 1, send: 4, when: composing}
+         - {accept: 2, send: 4, when: composing}
+         - {accept: 3, send: 4, when: composing}
+         - {accept: 4, send: 4, when: composing}
+         - {accept: 7, send: 5, when: composing}
+         - {accept: 8, send: 5, when: composing}
+         - {accept: 9, send: 5, when: composing}
+         - {accept: 0, send: 5, when: composing}
+         - {accept: "Shift+Shift_L", send: KP_2, when: composing}
+         - {accept: "Shift+Shift_R", send: KP_3, when: composing}
 
   #符号快速输入和部分符号的快速上屏
    punctuator:

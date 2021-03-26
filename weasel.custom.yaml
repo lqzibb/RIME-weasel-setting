@@ -9,8 +9,6 @@ patch:
     ascii_mode: true
   "app_options/code.exe":
     ascii_mode: true
-  "app_options/pwsh.exe":
-    ascii_mode: true
   "preset_color_schemes/demo_one_gray":
     author: lqzibb
     back_color: 0xD9D9D9

@@ -135,8 +135,8 @@ reverse_lookup:
 punctuator:
   import_preset: default
 
-key_binder:
-  import_preset: default
+#key_binder:
+#  import_preset: default
 
 recognizer:
   import_preset: default
