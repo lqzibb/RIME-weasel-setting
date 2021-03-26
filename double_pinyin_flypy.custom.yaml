@@ -76,7 +76,8 @@ patch:
    recognizer/patterns/punct: "\\\\[a-z]*$" #配合symbols.yaml中的特殊字符输入
    recognizer/patterns/reverse_lookup: "%[a-z]*'?$" #激活反查,通过修改[a-z]前面的字符来达到自定义字符激活
 
-   speller/delimiter: "'" #上屛时的音节间分音符
+   speller/delimiter: "'" #上屛时音节间分音符
+
    #自定义快捷键
    'key_binder/bindings/@18': {accept: "Control+KP_Divide", select: "aurora_pinyin", when: always}
    #'key_binder/import_preset': default
