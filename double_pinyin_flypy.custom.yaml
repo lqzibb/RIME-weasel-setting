@@ -94,26 +94,30 @@ patch:
          #操作輸入碼
          - {accept: grave, send: Delete, when: has_menu}
          #- {accept: grave, send: "Control+Left", when: has_menu}
-         - {accept: Tab, send: "Control+Right", when: has_menu}
+         #- {accept: Tab, send: "Control+Right", when: has_menu}
          #......................................................
          #翻页
+         - {accept: bracketleft, send: Page_Up, when: composing}
+         - {accept: bracketright, send: Page_Down, when: composing}
          - {accept: minus, send: Page_Up, when: paging}
          - {accept: equal, send: Page_Down, when: composing}
          - {accept: comma, send: Page_Up, when: paging}
          - {accept: period, send: Page_Down, when: composing}
          #.....................................................
          #快速选词
-         - {accept: 1, send: 4, when: composing}
-         - {accept: 2, send: 4, when: composing}
-         - {accept: 3, send: 4, when: composing}
-         - {accept: 4, send: 4, when: composing}
-         - {accept: 7, send: 5, when: composing}
-         - {accept: 8, send: 5, when: composing}
-         - {accept: 9, send: 5, when: composing}
-         - {accept: 0, send: 5, when: composing}
-         - {accept: "Shift+Shift_L", send: KP_2, when: composing}
-         - {accept: "Shift+Shift_R", send: KP_3, when: composing}
-
+         - {accept: 1, send: 3, when: composing}
+         - {accept: 2, send: 3, when: composing}
+         - {accept: 3, send: 3, when: composing}
+         - {accept: 4, send: 3, when: composing}
+         - {accept: 7, send: 4, when: composing}
+         - {accept: 8, send: 4, when: composing}
+         - {accept: 9, send: 4, when: composing}
+         - {accept: 0, send: 4, when: composing}
+         - {accept: Tab, send: 2, when: composing}
+         - {accept: "Shift+Shift_R", send: 5, when: composing}
+   #editor:
+   #   bindings:
+   #      - {accept: Tab, send: back_syllable}
   #符号快速输入和部分符号的快速上屏
    punctuator:
       #import_preset: symbols #导入默认设置
@@ -144,11 +148,11 @@ patch:
          "{": "{"
          "}": "}"
          "|": "|"
-         "\\": "\\"
+         "\\": "、"
          ":": "："
          ";": "；"
          "\"" : { pair: [ "“", "”" ] }
-         "'": {pair: ["「", "」"]}
+         "'": {pair: ["『", "』"]}
          "<": "《"
          #"<": ["《", "〈", "«", "<"]
          ">": "》"
@@ -158,42 +162,51 @@ patch:
          #'\': "、"
          #".": "。"
          "?": {commit: "？"}
-         "/": "、"
+         "/": "/"
          #"/": ["/", "÷"]
       full_shape:
-         " ": {commit: "　"}
-         "!": {commit: "！"}
-         "\"": {pair: ["“", "”"]}
-         "#": ["＃", "⌘"]
-         "$": ["￥", "$", "€", "£", "¥", "¢", "¤", "₩"]
-         "%": ["％", "°", "℃"]
-         "&": "＆"
-         "'": {pair: ["‘", "’"]}
-         "(": "（"
-         ")": "）"
-         "*": ["＊", "·", "・", "×", "※", "❂"]
-         "+": "＋"
-         ",": {commit: "，"}
-         "-": "－"
-         .: {commit: "。"}
-         "/": ["／", "÷"]
-         ":": {commit: "："}
-         ";": {commit: "；"}
-         "<": ["《", "〈", "«", "‹"]
-         "=": ["＝", "々", "〃"]
-         ">": ["》", "〉", "»", "›"]
-         "?": {commit: "？"}
-         "@": ["＠", "☯"]
-         "[": ["「", "【", "〔", "［"]
-         "\\": ["、", "＼"]
-         "]": ["」", "】", "〕", "］"]
-         "^": {commit: "……"}
-         _: "——"
-         "`": "｀"
-         "{": ["『", "〖", "｛"]
-         "|": ["·", "｜", "§", "¦"]
-         "}": ["』", "〗", "｝"]
-         "~": "～"
+         '`': "`"
+         '#': "#"
+        #'`': ["·","`"] #包含英文名中间的那个点（间隔号）
+         "~": "~"
+         "!": "!" #全角感叹号
+         #"!": "!" #半角感叹号
+         "@": ["@","iu"]
+         "$": "$"
+         #"$": ["¥", "$", "€", "£", "¢", "¤"]
+         "%": "%"
+         "^": "^"
+         "&": "&"
+         "*": "*"
+         "(": "("
+         ")": ")"
+         "-": "-"
+         "_": "_"
+         "+": "+"
+         "=": "="
+         "[": "["
+         #"[": ["【", "["]
+         "]": "]"
+         #"]": ["】", "]"]
+         "{": "{"
+         "}": "}"
+         "|": "|"
+         "\\": "\\"
+         ":": ":"
+         ";": ";"
+         "\"": "\""
+         "'": "'"
+         "<": "<"
+         #"<": ["《", "〈", "«", "<"]
+         ">": ">"
+         #">": ["》", "〉", "»", ">"]
+         ",": ","
+         ".": "."
+         #'\': "、"
+         #".": "。"
+         "?": "?"
+         "/": "/"
+         #"/": ["/", "÷"]
       symbols: #特殊符号
       #单位
          "\\ueuidu": ["℃"]

@@ -11,8 +11,8 @@ patch:
     Control_L: noop
     Control_R: noop
     Shift_L: commit_code
-    Shift_R: inline_ascii
-  'key_binder/import_preset': default
+    Shift_R: commit_code
+  #'key_binder/import_preset': default
   #'key_binder/bindings/@18': {accept: "Control+q", select: "double_pinyin_flypy", when: always}
   #key_binder:
     #import_preset: default #导入默认设置
