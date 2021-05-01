@@ -24,4 +24,4 @@ patch:
     - {schema: aurora_pinyin}
   "switcher/caption": "「选择方案」"
   "switcher/hotkeys":
-    - "Control+KP_Decimal"
+    - "Control+semicolon"
